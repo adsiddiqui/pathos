@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pathos - Select Mood</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header class="header">
+        <a href="index.html" class="header-logo">Pathos</a>
+        <nav class="header-nav">
+            <a href="moods.html">moods</a>
+            <a href="about.html">about</a>
+        </nav>
+    </header>
+
+    <div class="main-content no-margin">
+        <div class="container">
+            <h2 class="sentiment-title">How would you like to feel today?</h2>
+            
+            <div class="sentiment-cards">
+                <button class="sentiment-card" data-sentiment="neutral">
+                    <div class="card-content">
+                        <p>lounging on the beach<br>on a warm day</p>
+                    </div>
+                    <div class="card-bg" style="background-image: url('images/relaxed.jpg')"></div>
+                </button>
+
+                <button class="sentiment-card" data-sentiment="positive">
+                    <div class="card-content">
+                        <p>staring at the door<br>to narnia</p>
+                    </div>
+                    <div class="card-bg" style="background-image: url('images/impressed.jpg')"></div>
+                </button>
+
+                <button class="sentiment-card" data-sentiment="excited">
+                    <div class="card-content">
+                        <p>eating cookies as a kid<br>on christmas morning</p>
+                    </div>
+                    <div class="card-bg" style="background-image: url('images/excited.jpg')"></div>
+                </button>
+
+                <button class="sentiment-card" data-sentiment="peaceful">
+                    <div class="card-content">
+                        <p>walk in the park<br>after a long day of work</p>
+                    </div>
+                    <div class="card-bg" style="background-image: url('images/park.jpg')"></div>
+                </button>
+            </div>
+
+            <div id="loading" class="loading hidden">Loading articles...</div>
+            <div id="error" class="error hidden"></div>
+            <div id="articles" class="articles-grid"></div>
+        </div>
+    </div>
+
+    <script src="config.js"></script>
+    <script src="script.js"></script>
+    <script src="header.js"></script>
+</body>
+</html> 
