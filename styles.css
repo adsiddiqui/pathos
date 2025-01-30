@@ -766,4 +766,76 @@ html {
 /* Adjust main content for about page */
 .main-content.no-margin {
     padding-top: 100px;
-} 
+}
+
+/* Add these mobile styles at the end of your CSS file */
+@media screen and (max-width: 768px) {
+    /* Adjust hero section for mobile */
+    .hero h1 {
+        font-size: 3.5rem;  /* Smaller font size for mobile */
+    }
+
+    .subtitle {
+        font-size: 1.4rem;
+    }
+
+    /* Adjust mood cards layout */
+    .sentiment-cards {
+        grid-template-columns: 1fr;  /* Single column on mobile */
+        gap: 20px;
+        padding: 0 15px;
+    }
+
+    .sentiment-card {
+        height: 220px;  /* Slightly smaller height on mobile */
+    }
+
+    /* Adjust header and navigation */
+    .header {
+        padding: 15px 20px;
+    }
+
+    .header-nav {
+        gap: 20px;
+        margin-right: 20px;
+    }
+
+    .landing-nav {
+        padding: 15px 20px;
+    }
+
+    /* Adjust article grid */
+    .articles-grid {
+        grid-template-columns: 1fr;
+        padding: 0 15px;
+    }
+
+    /* Adjust popup for mobile */
+    .article-popup {
+        width: 95%;  /* Take up more width on mobile */
+        max-height: 85vh;  /* Slightly shorter */
+        padding: 40px 20px;  /* Less padding */
+    }
+
+    .article-popup .article-content h2 {
+        font-size: 1.4rem;  /* Smaller title */
+        margin-bottom: 15px;
+    }
+
+    .article-popup .ai-summary {
+        font-size: 1rem;  /* Smaller summary text */
+        line-height: 1.6;
+        margin-bottom: 20px;
+    }
+
+    .article-popup .read-article-btn {
+        font-size: 0.9rem;  /* Smaller button text */
+        padding: 10px 20px;
+    }
+
+    /* Adjust close button position */
+    .popup-close {
+        top: 15px;
+        right: 15px;
+    }
+}
